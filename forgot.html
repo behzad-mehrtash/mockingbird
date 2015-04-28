@@ -3,14 +3,14 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta charset="utf-8">
-	<title>Login</title>
+	<title>Forgot Password</title>
 	<meta name="generator" content="Bootply" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 		<!--[if lt IE 9]>
 			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 			<![endif]-->
-			<link href="css/loginStyles.css" rel="stylesheet">
+			<link href="css/forgotStyles.css" rel="stylesheet">
 		</head>
 		<body>
 			<!--login modal-->
@@ -18,20 +18,19 @@
 				<div class="modal-dialog">
 					<div class="modal-content">
 						<div class="modal-header">
-							<h1 class="text-center">Login</h1>
+							<h1 class="text-center">Forgot Password</h1>
 						</div>
 						<div class="modal-body">
 							<form class="form col-md-12 center-block">
-								<div class="alert alert-danger" role="alert" hidden>The username or password you entered is incorrect. </div>
+								<div class="alert alert-success" role="alert" hidden>A password reset link will be sent to your email address.</div>
+								<div class="alert alert-danger" role="alert" hidden>Your Email address is not valid.</div>
 								<div class="form-group">
-									<input type="text" class="form-control input-lg" id="usernameField" placeholder="Username">
+									<input type="text" class="form-control input-lg" id="emailField" placeholder="Email">
 								</div>
+						
 								<div class="form-group">
-									<input type="password" class="form-control input-lg" placeholder="Password">
-								</div>
-								<div class="form-group">
-									<button class="btn btn-primary btn-lg btn-block">Sign In</button>
-									<span class="pull-right"><a href="#">Register</a></span><span><a href="#">Forgot Password?</a></span>
+									<button class="btn btn-primary btn-lg btn-block">Submit</button>
+									<span><a href="#">Sign in</a></span>
 								</div>
 							</form>
 						</div>
@@ -42,6 +41,6 @@
 				</div>
 			</div>
 			<!-- script references -->
-			<script src="js/loginScripts.js"></script>
+			<script src="js/forgotScripts.js"></script>
 		</body>
 		</html>
