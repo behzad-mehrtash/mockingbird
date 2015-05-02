@@ -1,0 +1,55 @@
+#main .img-circle.user-photo-post {
+   margin-top:-3px;
+   margin-left:-19px; 
+   height:50px;
+   width:50px;
+}
+
+.post-title h4{
+	margin-top:	3px;
+	margin-bottom: 0px;
+}
+
+.post-title h5{
+	margin-top: 3px;
+	margin-bottom:0px;
+}
+
+.movie-cover-thumbnail{
+	width: 100px;
+	height: 150px;
+	margin-left: 10px;
+}
+
+.panel-body .movie-title{
+	margin-top: 0px;
+	font-size: 16px;
+}
+
+.panel-body hr{
+	margin-bottom: 5px;
+}
+
+#main .img-circle.user-photo-comment {
+   margin-top:0px;
+   margin-left:10px; 
+   height:30px;
+   width:30px;
+}
+
+.comment-body h5{
+	margin: 0px;
+}
+
+.comment div.user-photo-comment{
+	padding: 0px;
+}
+
+.comment-body {
+	padding:0px;
+}
+
+.panel hr{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
