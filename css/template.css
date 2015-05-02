@@ -1,0 +1,138 @@
+/*notification*/
+.notif-pic{
+    width: 40px;
+    height: 40px;
+    padding-left: 2px;
+    position: absolute;
+}
+
+.notif-text{
+    padding-left: 5px;
+    margin-left: 40px;
+    margin-right: 10px;
+    padding-bottom: 3px;
+    color: #2A4888;
+    word-wrap: break-word;
+    font-size: 11px;
+}
+
+.notif-box{
+    width: 250px;
+}
+
+.notif-icon{
+    color: #2A4888;
+    padding-right: 4px; 
+}
+/*notification*/
+
+/*chat box*/
+#fixed {
+    bottom: 0;
+    /*left: 50%;*/
+    right: 19%;
+    margin-left: -200px;
+    overflow: hidden;
+    position: fixed;
+    width: 250px;
+    height: 200px;
+    z-index: 1001;
+    visibility: hidden; 
+}
+
+.fixedHeader {
+    background: none repeat scroll 0 0 #6d84b4;
+    border: 1px solid #3d5a99;
+    border-bottom: none;
+    color: #fff;
+    height: 30px;
+    margin: 0 auto;
+    padding: 5px;
+    width: inherit;   
+    font-weight:700;
+    font-size:12px;
+}
+
+.fixedContent {
+    background: none repeat scroll 0 0 #ffffff;
+    border-left: 1px solid #b2b2b2;
+    border-right: 1px solid #b2b2b2;
+    margin: 0 auto;   
+    width: inherit;
+    max-width: inherit;
+    height: 140px;
+    overflow: auto;
+    display: block;
+}
+
+.userinput{
+    width: inherit;
+    height:30px;
+    outline:none;
+    display:block;
+    resize:none;
+    padding:5px;  
+}
+
+.messages{
+    color: #333;
+    line-height: 1.28;
+    padding-left:10px;
+    padding-right: 5px;
+    padding-top: 5px;
+    margin-left:70px;
+    font-size: 14px;
+    display:  block;
+    word-wrap: break-word;
+}
+
+.userwrap{
+    position:relative;
+}
+
+.user{
+    padding: 5px ;
+    font-size:10px;
+    color:#888;
+    font-weight:700;
+    position:absolute;
+    left:0; top:0;
+}
+
+.chatbox{
+    width: inherit;
+}
+
+.sidebar{
+    height: 100%;
+}
+/*chat box*/
+
+/*dynamic sidebar*/
+.dyn-list-group{
+    margin: 0px;
+}
+
+.dyn-panel-body{
+    padding: 0px;
+}
+
+.dyn-list-group-item-pic{
+    height: 60px;
+    width: 60px;
+}
+
+.dyn-list-group-item-movie-pic{
+    height: 130px;
+    width: 100px;
+}
+
+.dyn-sidebar-text{
+    color: #2A4888;
+}
+
+.dyn-alsolike-user-pic{
+    height: 40px;
+    width: 40px;
+}
+/*dynamic sidebar*/

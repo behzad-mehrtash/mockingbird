@@ -11,6 +11,11 @@
 			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		<link href="css/template.styles.css" rel="stylesheet">
+    <link href="css/template.css" rel="stylesheet">
+
+    <!--star rating-->
+    <link rel="stylesheet" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/star-rating.css" media="all" rel="stylesheet" type="text/css"/>
 	</head>
 	<body>
 <div class="wrapper">
@@ -36,8 +41,8 @@
                       <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-cog"></i></a>
                         <ul class="dropdown-menu">
-                          <li><a href="">Log Out</a></li>
                           <li><a href="">Settings</a></li>
+                          <li><a href="">Log Out</a></li>
                         </ul>
                       </li>
                     </ul>
@@ -46,10 +51,58 @@
                         <a href="#"><i class="glyphicon glyphicon-home"></i> Home</a>
                       </li>
                       <li>
-                        <a href="#postModal" role="button" data-toggle="modal"><i class="glyphicon glyphicon-plus"></i> Notifications</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><!--<a href="#postModal" role="button" data-toggle="modal"><i class="glyphicon glyphicon-plus"></i>--><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Notifications</a>
+                        <ul class="dropdown-menu">
+                          
+                          <li class="notif-box">
+                            <div class="userwrap">
+                              <span>
+                                <img class="notif-pic" src="img/breakfast-at-tiffany-s.jpg">
+                              </span>
+                              <p class="notif-text"><span class="notif-icon glyphicon glyphicon-thumbs-up"></span><strong>Ernest Hemingway</strong> likes your post about <strong>Breakkfast at Tiffanys'</strong>.</p>
+
+                            </div>
+                          </li>
+                          <li class="notif-box">
+                            <div class="userwrap">
+                              <span>
+                                <img class="notif-pic" src="img/cwo-poster.jpg">
+                              </span>
+                              <p class="notif-text"><span class="notif-icon glyphicon glyphicon-comment"></span><strong>Regina Phalange</strong> commented on your post about <strong>Clockwork Orange</strong>.</p>
+
+                            </div>
+                          </li>
+                          <li class="notif-box">
+                            <div class="userwrap">
+                              <span>
+                                <img class="notif-pic" src="img/johnsnow.jpg">
+                              </span>
+                              <p class="notif-text">
+                                  <span class="notif-icon glyphicon glyphicon-ok">
+                                  </span>
+                                  <span class="notif-icon glyphicon glyphicon-remove">
+                                  </span>
+                                <strong>John Snow</strong> started following you.
+                              </p>
+
+                            </div>
+                          </li>
+                          <li class="notif-box">
+                            <div class="userwrap">
+                              <span>
+                                <img class="notif-pic" src="img/pulpfiction.jpg">
+                              </span>
+                              <p class="notif-text">
+                                  <span class="notif-icon glyphicon glyphicon-comment">
+                                  </span>
+                                <strong>John Snow</strong> replyed to your comment on <strong>Pulp Fiction</strong>.
+                              </p>
+                            </div>
+                          </li>
+                        </ul>
                       </li>
                       <li>
-                        <a href="#"><span class="badge">badge</span></a>
+                        <a href="#"><i class="glyphicon glyphicon-user"></i> behzad_m</a>
                       </li>
                     </ul>
                      <form class="navbar-form navbar-left">
@@ -72,61 +125,174 @@
                       	<div class="row">
                           
                          <!-- main col left --> 
-                         <div class="col-sm-5">
-                           
-                              <div class="panel panel-default">
-                                <div class="panel-thumbnail"><img src="/assets/example/bg_5.jpg" class="img-responsive"></div>
-                                <div class="panel-body">
-                                  <p class="lead">Urbanization</p>
-                                  <p>45 Followers, 13 Posts</p>
-                                  
-                                  <p>
-                                    <img src="https://lh3.googleusercontent.com/uFp_tsTJboUY7kue5XAsGA=s28" width="28px" height="28px">
-                                  </p>
+                         <div class="col-sm-4">
+                          <!-- people you may know -->         
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <a href="#" class="pull-right">View all</a> <h4>People You May Know</h4>
+                            </div>
+                            <div class="dyn-panel-body">
+                              <div class="dyn-list-group">
+                                <a href="#" class="list-group-item">
+                                    <div class="row">
+                                      <div class="col-md-3">
+                                        <img src="img/lukeskywalker.jpg" class="dyn-list-group-item-pic">
+                                      </div>
+                                      <div class="col-md-7 dyn-sidebar-text">
+                                        <h4>Luck Skywalker</h4>
+                                        <h6>45 Followers </br>5 Posts</h6>
+                                      </div>
+                                      <div class="col-md-2">
+                                        <div class="glyphicon glyphicon-ok dyn-sidebar-text">
+                                        </div>
+                                        <div class="glyphicon glyphicon-remove dyn-sidebar-text"></div>
+                                      </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <div class="row">
+                                      <div class="col-md-3">
+                                        <img src="img/jules.jpg" class="dyn-list-group-item-pic">
+                                      </div>
+                                      <div class="col-md-7 dyn-sidebar-text">
+                                        <h4>Jules Winnfield</h4>
+                                        <h6>52648 Followers </br>1 Posts</h6>
+                                      </div>
+                                      <div class="col-md-2">
+                                        <div class="glyphicon glyphicon-ok dyn-sidebar-text"></div>
+                                        <div class="glyphicon glyphicon-remove dyn-sidebar-text"></div>
+                                      </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <div class="row">
+                                      <div class="col-md-3">
+                                        <img src="img/jaqen.jpg" class="dyn-list-group-item-pic">
+                                      </div>
+                                      <div class="col-md-7 dyn-sidebar-text">
+                                        <h4>Jaqen H'ghar</h4>
+                                        <h6>0 Followers </br>0 Posts</h6>
+                                      </div>
+                                      <div class="col-md-2">
+                                        <div class="glyphicon glyphicon-ok dyn-sidebar-text"></div>
+                                        <div class="glyphicon glyphicon-remove dyn-sidebar-text"></div>
+                                      </div>
+                                    </div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- people you may know -->
+   
+                          <!-- recommended for you -->         
+                          <div class="panel panel-default">
+                            <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>Recommended For You</h4></div>
+                              <div class="dyn-panel-body">
+                                  <div class="dyn-list-group">
+                                  <a href="#" class="list-group-item">
+                                    <div class="row">
+                                      <div class="col-md-5">
+                                        <img src="img/eraserhead.jpg" class="dyn-list-group-item-movie-pic">
+                                      </div>
+                                      <div class="col-md-6">
+                                        <h4>ERASERHEAD</h4>
+                                        <h6><strong>Director: </strong>David Lynch</h6>
+                                        <input id="input-21b" stars=5 value="3.5" type="number" class="rating" min=0 max=5 step=0.1 data-size="sm" data-glyphicon=0 data-show-clear="false" data-stars="5" data-star-captions="{}" readonly="true">
+                                      </div>
+                                      <div class="col-md-4">
+                                        <span class="badge">Watch Later...</span>
+                                      </div>
+                                    </div>
+                                  </a>
+                                  <a href="#" class="list-group-item">
+                                    <div class="row">
+                                      <div class="col-md-5">
+                                        <img src="img/whiplash.jpg" class="dyn-list-group-item-movie-pic">
+                                      </div>
+                                      <div class="col-md-6">
+                                        <h4>Whiplash</h4>
+                                        <h6><strong>Director: </strong>Damien Chazelle</h6>
+                                        <input id="input-21b" stars=5 value="4.1" type="number" class="rating" min=0 max=5 step=0.1 data-size="sm" data-glyphicon=0 data-show-clear="false" data-stars="5" data-star-captions="{}" readonly="true">
+                                      </div>
+                                      <div class="col-md-4">
+                                        <span class="badge">Watch Later...</span>
+                                      </div>
+                                    </div>
+                                  </a>
+                                  <a href="#" class="list-group-item">
+                                    <div class="row">
+                                      <div class="col-md-5">
+                                        <img src="img/leon.jpg" class="dyn-list-group-item-movie-pic">
+                                      </div>
+                                      <div class="col-md-6">
+                                        <h4>Léon: The Professional</h4>
+                                        <h6><strong>Director: </strong>Luc Besson</h6>
+                                        <input id="input-21b" stars=5 value="5" type="number" class="rating" min=0 max=5 step=0.1 data-size="sm" data-glyphicon=0 data-show-clear="false" data-stars="5" data-star-captions="{}" readonly="true">
+                                      </div>
+                                      <div class="col-md-4">
+                                        <span class="badge">Watch Later...</span>
+                                      </div>
+                                    </div>
+                                  </a>
                                 </div>
                               </div>
+                          </div>
+                          <!-- recommended for you -->   
 
-                           
-                              <div class="panel panel-default">
-                                <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>Bootstrap Examples</h4></div>
-                                  <div class="panel-body">
-                                    <div class="list-group">
-                                      <a href="http://bootply.com/tagged/modal" class="list-group-item">Modal / Dialog</a>
-                                      <a href="http://bootply.com/tagged/datetime" class="list-group-item">Datetime Examples</a>
-                                      <a href="http://bootply.com/tagged/datatable" class="list-group-item">Data Grids</a>
+                           <!-- what your friends had rated --> 
+                          <div class="panel panel-default">
+                            <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>You May Also Like</h4></div>
+                              <div class="dyn-panel-body">
+                                  <div class="dyn-list-group">
+                                  <a href="#" class="list-group-item">
+                                    <div class="row">
+                                      <div class="col-md-6">
+                                        <img src="img/jake.png" class="dyn-alsolike-user-pic">
+                                        <h6><strong>Jake</strong> rated <strong>Twilight</strong></h6>
+                                        <input id="input-21b" stars=5 value="0.2" type="number" class="rating" min=0 max=5 step=0.1 data-size="sm" data-glyphicon=0 data-show-clear="false" data-stars="5" data-star-captions="{}" readonly="true">
+                                      </div>
+                                      <div class="col-md-4">
+                                        <img src="img/twilight.jpg" class="dyn-list-group-item-movie-pic">
+                                      </div>
+                                      <div class="col-md-4">
+                                        <span class="badge">Watch Later...</span>
+                                      </div>
                                     </div>
-                                  </div>
-                              </div>
-                           
-                              <div class="well"> 
-                                   <form class="form-horizontal" role="form">
-                                    <h4>What's New</h4>
-                                     <div class="form-group" style="padding:14px;">
-                                      <textarea class="form-control" placeholder="Update your status"></textarea>
+                                  </a>
+                                   <a href="#" class="list-group-item">
+                                    <div class="row">
+                                      <div class="col-md-6">
+                                        <img src="img/heckles.gif" class="dyn-alsolike-user-pic">
+                                        <h6><strong>Mr. Heckles</strong> rated <strong>How I Met Your Mother</strong></h6>
+                                        <input id="input-21b" stars=5 value="2.5" type="number" class="rating" min=0 max=5 step=0.1 data-size="sm" data-glyphicon=0 data-show-clear="false" data-stars="5" data-star-captions="{}" readonly="true">
+                                      </div>
+                                      <div class="col-md-4">
+                                        <img src="img/himym.jpg" class="dyn-list-group-item-movie-pic">
+                                      </div>
+                                      <div class="col-md-4">
+                                        <span class="badge">Watch Later...</span>
+                                      </div>
                                     </div>
-                                    <button class="btn btn-primary pull-right" type="button">Post</button><ul class="list-inline"><li><a href=""><i class="glyphicon glyphicon-upload"></i></a></li><li><a href=""><i class="glyphicon glyphicon-camera"></i></a></li><li><a href=""><i class="glyphicon glyphicon-map-marker"></i></a></li></ul>
-                                  </form>
+                                  </a>
+                                   <a href="#" class="list-group-item">
+                                    <div class="row">
+                                      <div class="col-md-6">
+                                        <img src="img/paul.jpg" class="dyn-alsolike-user-pic">
+                                        <h6><strong>Paul Walker</strong> rated <strong>Dead Man</strong></h6>
+                                        <input id="input-21b" stars=5 value="4.5" type="number" class="rating" min=0 max=5 step=0.1 data-size="sm" data-glyphicon=0 data-show-clear="false" data-stars="5" data-star-captions="{}" readonly="true">
+                                      </div>
+                                      <div class="col-md-4">
+                                        <img src="img/deadman.jpg" class="dyn-list-group-item-movie-pic">
+                                      </div>
+                                      <div class="col-md-4">
+                                        <span class="badge">Watch Later...</span>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
                               </div>
-                           
-                              <div class="panel panel-default">
-                                 <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>More Templates</h4></div>
-                                  <div class="panel-body">
-                                    <img src="//placehold.it/150x150" class="img-circle pull-right"> <a href="#">Free @Bootply</a>
-                                    <div class="clearfix"></div>
-                                    There a load of new free Bootstrap 3 ready templates at Bootply. All of these templates are free and don't require extensive customization to the Bootstrap baseline.
-                                    <hr>
-                                    <ul class="list-unstyled"><li><a href="http://www.bootply.com/templates">Dashboard</a></li><li><a href="http://www.bootply.com/templates">Darkside</a></li><li><a href="http://www.bootply.com/templates">Greenfield</a></li></ul>
-                                  </div>
-                              </div>
-                           
-                              <div class="panel panel-default">
-                                <div class="panel-heading"><h4>What Is Bootstrap?</h4></div>
-                               	<div class="panel-body">
-                                	Bootstrap is front end frameworkto build custom web applications that are fast, responsive &amp; intuitive. It consist of CSS and HTML for typography, forms, buttons, tables, grids, and navigation along with custom-built jQuery plug-ins and support for responsive layouts. With dozens of reusable components for navigation, pagination, labels, alerts etc..                          </div>
-                              </div>
-
-                           		
-                           
+                          </div>
+                          <!-- what your friends had rated -->
                           </div>
                           
                           <!-- main col right -->
@@ -197,37 +363,28 @@
                                     <img src="https://lh4.googleusercontent.com/-9Yw2jNffJlE/AAAAAAAAAAI/AAAAAAAAAAA/u3WcFXvK-g8/s28-c-k-no/photo.jpg" width="28px" height="28px">
                                   </p>
                                 </div>
-                              </div>
+                          </div>
                             
                           </div>
                        </div><!--/row-->
                       
-                        <div class="row">
-                          <div class="col-sm-6">
-                            <a href="#">Twitter</a> <small class="text-muted">|</small> <a href="#">Facebook</a> <small class="text-muted">|</small> <a href="#">Google+</a>
-                          </div>
+                      
+
+                    <div class="row">
+                      <!--chat box-->
+                      <div id="fixed">
+                        <div class="fixedHeader">
+                          <span class="glyphicon glyphicon-remove" aria-hidden="true" id="chatCloseButton">
+                            <span id="username">jQuery404</span>
+                          </span>
                         </div>
-                      
-                        <div class="row" id="footer">    
-                          <div class="col-sm-6">
-                            
-                          </div>
-                          <div class="col-sm-6">
-                            <p>
-                            <a href="#" class="pull-right">©Copyright 2013</a>
-                            </p>
-                          </div>
+
+                        <div class="fixedContent"></div>
+                        <div class="chatbox">
+                            <textarea class="userinput">Type here...</textarea>            
                         </div>
-                      
-                      <hr>
-                      
-                      <h4 class="text-center">
-                      <a href="http://bootply.com/96266" target="ext">Download this Template @Bootply</a>
-                      </h4>
-                        
-                      <hr>
-                        
-                      
+                      </div><!--/chat box-->
+                    </div>                      
                     </div><!-- /col-9 -->
                 </div><!-- /padding -->
             </div>
@@ -235,31 +392,47 @@
 
             <!-- sidebar -->
             <div class="column col-sm-2 col-xs-1 sidebar-offcanvas" id="sidebar">
-              
-                <ul class="nav">
-                <li><a href="#" data-toggle="offcanvas" class="visible-xs text-center"><i class="glyphicon glyphicon-chevron-right"></i></a></li>
+              <ul class="panel panel-primary sidebar  " id="sidebar-footer">
+                <li class="panel-heading" id="chat-heading">
+                ONLINE USERS
+                </li>
+                <li class="media">
+                  <div class="media-body">
+                    <div class="media">
+                      <a class="pull-left" href="#">
+                        <img class="media-object img-circle" style="max-height:40px;" src="img/user.png">
+                        </a>
+                          <div class="media-body">
+                            <h5>Alex Deo </h5>    
+                          </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="media">
+                  <div class="media-body">
+                    <div class="media">
+                      <a class="pull-left" href="#">
+                        <img class="media-object img-circle" style="max-height:40px;" src="img/user2.gif">
+                        </a>
+                          <div class="media-body">
+                            <h5>Diego Bambo</h5>
+                          </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="media">
+                  <div class="media-body">
+                    <div class="media">
+                      <a class="pull-left" href="#">
+                        <img class="media-object img-circle" style="max-height:40px;" src="img/user.png">
+                        </a>
+                          <div class="media-body">
+                            <h5>Jose Salvadore</h5>
+                          </div>
+                    </div>
+                  </div>
+                </li>
               </ul>
-               
-                <ul class="nav hidden-xs" id="lg-menu">
-                    <li class="active"><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Featured</a></li>
-                    <li><a href="#stories"><i class="glyphicon glyphicon-list"></i> Stories</a></li>
-                    <li><a href="#"><i class="glyphicon glyphicon-paperclip"></i> Saved</a></li>
-                    <li><a href="#"><i class="glyphicon glyphicon-refresh"></i> Refresh</a></li>
-                </ul>
-                <ul class="list-unstyled hidden-xs" id="sidebar-footer">
-                    <li>
-                      <a href="http://www.bootply.com"><h3>Bootstrap</h3> <i class="glyphicon glyphicon-heart-empty"></i> Bootply</a>
-                    </li>
-                </ul>
-              
-                <!-- tiny only nav-->
-              <ul class="nav visible-xs" id="xs-menu">
-                    <li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-list-alt"></i></a></li>
-                    <li><a href="#stories" class="text-center"><i class="glyphicon glyphicon-list"></i></a></li>
-                    <li><a href="#" class="text-center"><i class="glyphicon glyphicon-paperclip"></i></a></li>
-                    <li><a href="#" class="text-center"><i class="glyphicon glyphicon-refresh"></i></a></li>
-                </ul>
-              
             </div>
             <!-- /sidebar -->
           
@@ -296,5 +469,63 @@
 		<script src="js/jquery-1.11.2.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/scripts.js"></script>
+    <script src="js/template.js"></script>
+
+  <!--star rating-->
+  <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
+  <script src="js/star-rating.js" type="text/javascript"></script>
+
+  <script>
+    jQuery(document).ready(function () {
+        $("#input-21f").rating({
+            starCaptions: function(val) {
+                if (val < 3) {
+                    return val;
+                } else {
+                    return 'high';
+                }
+            },
+            starCaptionClasses: function(val) {
+                if (val < 3) {
+                    return 'label label-danger';
+                } else {
+                    return 'label label-success';
+                }
+            },
+            hoverOnClear: false
+        });
+        
+        $('#rating-input').rating({
+              min: 0,
+              max: 5,
+              step: 1,
+              size: 'lg',
+              showClear: false
+           });
+           
+        $('#btn-rating-input').on('click', function() {
+            $('#rating-input').rating('refresh', {
+                showClear:true, 
+                disabled:true
+            });
+        });
+        
+        
+        $('.btn-danger').on('click', function() {
+            $("#kartik").rating('destroy');
+        });
+        
+        $('.btn-success').on('click', function() {
+            $("#kartik").rating('create');
+        });
+        
+        $('#rating-input').on('rating.change', function() {
+            alert($('#rating-input').val());
+        });
+        
+        
+        $('.rb-rating').rating({'showCaption':true, 'stars':'3', 'min':'0', 'max':'3', 'step':'1', 'size':'xs', 'starCaptions': {0:'status:nix', 1:'status:wackelt', 2:'status:geht', 3:'status:laeuft'}});
+    });
+</script>
 	</body>
 </html>
